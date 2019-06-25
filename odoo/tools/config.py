@@ -129,8 +129,6 @@ class configmanager(object):
                          help="Enable correct behavior when behind a reverse proxy")
         group.add_option("--longpolling-port", dest="longpolling_port", my_default=8072,
                          help="specify the TCP port for longpolling requests", type="int")
-                         help="Activate reverse proxy WSGI wrappers (headers rewriting) "
-                              "Only enable this when running behind a trusted web proxy!")
         group.add_option("--redis", dest="redis_session_store", my_default=False,
                              help="Enable/No enable redis session store")
         parser.add_option_group(group)
